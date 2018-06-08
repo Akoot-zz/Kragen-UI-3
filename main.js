@@ -15,7 +15,7 @@ process.env.NODE_ENV = 'development'
 function createWindow () {
 
     /* Create the window */
-    mainWindow = new BrowserWindow({width: 800, height: 400, center: true, icon: './assets/icons/512x512.png', webPreferences: {plugins: true}})
+    mainWindow = new BrowserWindow({center: true, icon: './assets/icons/512x512.png', webPreferences: {plugins: true}})
     mainWindow.on('closed', function () {
         mainWindow = null
     })

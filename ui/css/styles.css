@@ -19,6 +19,7 @@ body {
 
 main {
 	margin: auto;
+	width: 50%;
 	color: #929292;
 	font-family: Roboto;
 }
@@ -34,6 +35,10 @@ footer {
 
 *:focus {
 	outline: none;
+}
+
+.center {
+	margin: 0 auto;
 }
 
 button {
@@ -155,7 +160,7 @@ input:hover, input:focus{
 }
 
 .switch, .slider-obj, input, button {
-	margin: 0.5em 0.3em 0.5em 0.2em;
+	margin: 0.5em 0.2em 0.5em 0.2em;
 }
 
 .switch {
