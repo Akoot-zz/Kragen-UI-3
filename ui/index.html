@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title></title>
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <!-- Get the renderer -->
+  <script>const renderer = require('../renderer')</script>
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav></nav>
+
+  </header>
+
+  <main>
+
+    <div>      
+      <h1>Hello World</h1>
+      <p>paragraph of a lifetime </p>
+    </div>
+
+    <div>      
+      <button>Sign In</button>
+
+      <button class="btn-accent">Sign Up</button>
+
+      <button class="btn-disabled">Nuke Korea</button>
+    </div>
+
+    <div>
+      <input type="text" name="name">
+    </div>
+
+    <div class="slider-obj">
+      Percent
+      <input type="range" min="0" max="255" value="90" class="slider slider-big" id="slider1">
+    </div>
+
+    <div class="slider-obj">
+      Amount
+      <input type="range" min="0" max="255" value="10" class="slider slider-big" id="slider1">
+    </div>
+
+    <div>     
+      <label class="switch">
+        <input type="checkbox">
+        <span class="switch-slider"></span>
+      </label>
+
+      <label class="switch">
+        <input type="checkbox">
+        <span class="switch-slider accent"></span>
+      </label>
+
+      <label class="switch">
+        <input type="checkbox">
+        <span class="switch-slider danger"></span>
+      </label>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <script>document.write(renderer.app.getVersion())</script>
+  </footer>
+
+</body>
+</html>

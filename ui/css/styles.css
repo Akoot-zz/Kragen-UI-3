@@ -1,0 +1,214 @@
+:root {
+	user-select: none;
+	cursor: default;
+
+	--accent: #00D565;
+	--accent-gray: #79807D;
+
+	--danger: #E32146;
+
+	--darker-gray: #262626;
+	--dark-gray: #333333;
+	--light-gray: #F3F3F3;
+}
+
+body {
+	background: #1C1C1C;
+	padding: 5%;
+}
+
+main {
+	margin: auto;
+	color: #929292;
+	font-family: Roboto;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 0.5em;
+	font-family: monospace;
+	color: #00D565;
+}
+
+*:focus {
+	outline: none;
+}
+
+button {
+	cursor: pointer;
+	display: inline-block;
+
+	border: none;
+	text-decoration: none;
+	
+	font-family: Roboto;
+	font-weight: thin;
+
+	background-color: var(--dark-gray);
+	color: var(--light-gray);
+
+	text-align: center;
+
+	padding: 0.7em 1.5em;
+
+	border-radius: 1.5em;
+
+	transition: 0.3s;
+}
+
+button:hover {
+	background-color: var(--light-gray);
+	color: var(--dark-gray);
+}
+
+button:focus { outline: none; }
+
+button:active {
+	color: var(--dark-gray);
+	background-color: var(--light-gray);
+	transition: 0s;
+}
+
+.btn-disabled {
+	cursor: not-allowed;
+
+	background-color: var(--light-gray);
+	color: var(--gray);
+}
+
+.btn-disabled:hover {
+	background-color: var(--light-gray);
+	color: var(--gray);
+}
+
+.btn-accent {
+	background-color: var(--accent);
+	color: var(--dark-gray);
+}
+
+.btn-accent:hover {
+	background-color: var(--light-gray);
+	color: var(--dark-gray);
+}
+
+.btn-danger {
+	background-color: var(--danger);
+	color: var(--dark-gray);
+}
+
+.btn-danger:hover {
+	background-color: var(--dark-gray);
+	color: var(--light-gray);
+}
+
+.btn-round {
+	padding: 0.7em 1em;
+}
+
+input {
+	background-color: var(--dark-gray);
+	color: var(--light-gray);
+	border: none;
+	text-decoration: none;
+	padding: 0.7em 1.5em;
+	border-radius: 1.5em;
+	font-family: Roboto;
+	font-weight: normal;
+	transition: 0.3s;
+}
+
+input:hover, input:focus{
+	background-color: var(--light-gray);
+	color: var(--dark-gray);
+}
+
+.slider {
+	-webkit-appearance: none;
+	height: 16px;
+	background: var(--dark-gray);
+	padding: 0;
+}
+
+.slider:hover, .slider:active{
+	background: var(--light-gray);
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%; 
+	background: var(--accent-gray);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.slider::-webkit-slider-thumb:hover, .slider::-webkit-slider-thumb:active {
+	background: var(--accent);
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+}
+
+.slider-big {
+	width: 50%;
+}
+
+.switch, .slider-obj, input, button {
+	margin: 0.5em 0.3em 0.5em 0.2em;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 3.5em;
+	height: 2em;
+}
+
+.switch input {display:none;}
+
+.switch-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 1em;
+	background-color: var(--light-gray);
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.switch-slider:before {
+	position: absolute;
+	content: "";
+	height: 1.5em;
+	width: 1.5em;
+	left: 0.25em;
+	bottom: 0.25em;
+	border-radius: 50%;
+	background-color: var(--dark-gray);
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+input:checked + .switch-slider.danger {
+	background-color: var(--danger);
+}
+
+input:checked + .switch-slider.accent {
+	background-color: var(--accent);
+}
+
+input:checked + .switch-slider {
+	background-color: var(--light-gray);
+}
+
+input:checked + .switch-slider:before {
+	-webkit-transform: translateX(1.5em);
+}
+
+::selection {
+	background: var(--accent);
+}

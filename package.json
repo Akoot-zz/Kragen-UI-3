@@ -1,0 +1,20 @@
+{
+  "name": "Kragen-UI",
+  "version": "1.0.0",
+  "description": "UI template",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Electron",
+    "ui",
+    "user interface"
+  ],
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "node-gyp": "^3.6.2"
+  },
+  "author": "Akoot",
+  "license": "MIT"
+}
